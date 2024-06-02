@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:wght@100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=League+Spartan:wght@100..900&family=Lexend+Deca:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Recursive:wght@300..1000&family=Rubik:ital,wght@0,300..900;1,300..900&family=Young+Serif&display=swap');
+
+body {
+    font-family: "Rubik", sans-serif;
+}
+
+html {
+    font-size: 16px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+
+ width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+position: relative;
+z-index: -1;
+background-color: hsl(270, 20%, 96%);
+
+}
+.container::before{
+    content: '';
+    position: absolute;
+    width:100%;
+    height:100%;
+    background: linear-gradient(to left,
+    hsl(293, 100%, 63%),
+    hsl(264, 100%, 61%));
+    border-radius: 0 0 50% 50%;
+    left:0;
+    top:0;
+    z-index: 1;
+    transform: translate(-50%,-40%);
+
+}
+.content {
+   
+
+    max-width: 1440px; 
+    display: flex;
+    align-items: center;
+position: relative;
+    flex-direction: column;
+margin:auto;
+    z-index: 1;
+
+    justify-content: center;
+    gap:40px;
+}
+
+
+
+.app-box {
+    width: 243px;
+
+    font-size: 8px;
+    padding: 10px;
+
+    border-radius: 10px;
+    background-color: #fff;
+    border-radius: 20px;
+
+}
+
+.app-header {
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(to left,
+            hsl(293, 100%, 63%),
+            hsl(264, 100%, 61%));
+    color: #fff;
+    height: 50px;
+    border-radius: 20px 20px 5px 5px;
+    align-items: center;
+    position: relative;
+    padding: 10px 1px 10px 0;
+
+}
+
+.app-header::before {
+    content: '';
+    position: absolute;
+    width: 60%;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 30px;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.app-header .left-head {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    gap: 1px;
+}
+
+.left-head img {
+    border-radius: 50%;
+    border: 1px solid #fff;
+    display: inline-block;
+    margin-right: 4px;
+}
+
+.left-head span {
+    font-size: 15px;
+}
+
+.left-head .name h5 {
+    font-weight: 400;
+    font-size: 12px;
+    margin-bottom: 3px;
+}
+
+.left-head .name h6 {
+    font-size: 8px;
+    color: hsl(276, 100%, 81%);
+
+}
+
+.app-header .right-head span {
+    font-size: 15px;
+    color: hsl(276, 100%, 81%);
+    margin-top: 18px;
+    margin-right: 5px;
+    display: block;
+}
+
+/* app main */
+
+
+.app-main {
+   
+}
+
+.app-main .top-chat {
+    width: 130px;
+    color: hsl(276, 55%, 52%);
+}
+
+.app-main .top-chat p {
+    margin: 10px 5px;
+    background-color: hsla(271, 47%, 73%, 0.308);
+    padding: 5px;
+    border-radius: 10px 10px 10px 1px;
+    font-weight: 400;
+}
+
+.app-box .app-content {
+    background-color: hsl(270, 20%, 96%);
+    padding:10px 10px 10px 10px;
+    border-radius: 0 0 20px 20px;
+}
+
+.app-main {
+    width: 100%;
+
+}
+
+.mid-chat .mid-images {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.app-main .mid-chat .mid-images img {
+    border-radius: 10px;
+
+}
+
+.app-main .mid-chat .mid-texts {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 10px;
+
+
+}
+
+.app-main .mid-chat .mid-texts p {
+    color: hsl(271, 15%, 43%);
+    max-width: 60%;
+    padding: 5px 10px;
+    background-color: #fff;
+    border-radius: 15px 15px 5px 15px;
+    margin-right: 10px;
+
+}
+
+.app-box .app-footer .chat-text {
+    margin: 10px 5px;
+    background-color: hsla(271, 47%, 73%, 0.308);
+    padding: 5px;
+    border-radius: 10px 10px 10px 1px;
+    font-weight: 400;
+    width: 50%;
+    color: hsl(276, 55%, 52%);
+}
+
+.app-box .app-footer .add-box {
+    width: 155px;
+    height: 30px;
+    background: linear-gradient(to right,
+            hsl(293, 100%, 63%),
+            hsl(264, 100%, 61%));
+    margin-bottom: 10px;
+    border-radius: 10px 10px 10px 1px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+    position: relative;
+
+}
+
+.app-box .app-footer .add-box .circle {
+    width: 15px;
+    height: 15px;
+    border: 1px solid  hsl(289, 100%, 72%);
+    border-radius: 50%;
+    margin-left: 5px;
+}
+
+.app-box .app-footer .add-box p {
+    font-weight: 200;
+}
+
+.app-box .app-footer .add-box h4 {
+    justify-self: end;
+    position: absolute;
+    right: 10px;
+    font-size: 13px;
+}
+
+.app-box .chat-field {
+    width: 100%;
+    background-color: #fff;
+position: relative;
+    padding: 12px 20px;
+
+
+border-radius: 20px;
+display: flex;
+align-items: center;
+margin: auto;
+margin-top: 20px;
+
+
+}
+.app-box .chat-field .right-icon{
+    position: absolute;
+    background-color: hsl(271, 36%, 24%);
+    right: 10px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:#fff;
+    
+}
+.app-box .chat-field  .placeholder{
+    font-size:8px;
+    color:hsl(206, 6%, 79%);
+
+}
+.main-content h1{
+    color:#000;
+    font-weight: 500;
+    margin:20px 0;
+   
+  
+}
+.main-content{
+    text-align: center;
+   width:100%;
+   padding:0 10px;
+
+}
+.main-content p{
+    color:hsl(202, 6%, 74%);
+    line-height: 24px;
+}
+
+@media (min-width:700px)
+{
+
+    .container{
+        z-index: 6;
+        align-items: center;
+        justify-content: center;
+     width: 100%;  
+    }
+    .container::before{
+        width:50%;
+        height: 100%;
+        left:0;
+        top:0;
+        border-radius: 0 0 50% 50%;
+        transform: translate(-20%,-20%);
+    }
+  .app-box{
+    flex-shrink: 0;
+    justify-self: start ;
+
+  }
+    .main-content{
+        width: 100%;
+       
+    }
+    .content{
+      display: flex;
+       flex-direction: row;
+        z-index: 2;
+        margin-left:15%;
+        gap:50px;
+        width:100%;
+        justify-content: center;
+        
+       
+    }
+    .main-content {
+        max-width: 500px;
+    }
+}
